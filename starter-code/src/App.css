@@ -20,3 +20,17 @@
 .App-link {
   color: #09d3ac;
 }
+
+.contactrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.picture {
+  max-width: 50px;
+}
+
+.allcontacts {
+  max-width: 20vw;
+}

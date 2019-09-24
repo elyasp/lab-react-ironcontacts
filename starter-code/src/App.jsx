@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+
+import contacts from "./contacts.json";
+import ContactList from "./components/ContactList";
 
 import "./App.css";
 
 class App extends Component {
   render() {
-    const message = "This is my app";
-
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{message}</p>
-        </header>
+      <div className="allcontacts">
+        <h1>IronContacts</h1>
+        <ContactList contacts={contacts} />
       </div>
     );
   }
